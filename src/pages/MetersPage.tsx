@@ -1,6 +1,7 @@
 // MetersPage.tsx
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import Appbar from '../components/appbar';
 import '../css/MetersPage.css';
 
 const MetersPage: React.FC = () => {
@@ -33,29 +34,7 @@ const MetersPage: React.FC = () => {
 
   return (
     <div className="meters-container">
-            <div className="app-bar">
-                <div className="shortcut" onClick={() => console.log('Send Configuration')}>
-                    {/* <span className="material-icons">send</span> */}
-                    <p>Configs</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Go to Meters')}>
-                    {/* <span className="material-icons">dashboard</span> */}
-                    <p>Meters</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Home')}>
-                    {/* <span className="material-icons">home</span> */}
-                    <p>Home</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Go to Reports')}>
-                    {/* <span className="material-icons">description</span> */}
-                    <p>Reports</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Settings')}>
-                    {/* <span className="material-icons">settings</span> */}
-                    <p>Settings</p>
-                </div>
-            </div>
-
+      <Appbar />
       <div className="widget-section">
         {meters.map((meter) => (
           <div key={meter.id} className="widget meter-widget">

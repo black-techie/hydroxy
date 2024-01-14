@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/ReportsPage.css';
+import Appbar from '../components/appbar';
 
 const ReportsPage: React.FC = () => {
     const cumulativeFlow = 1500;
@@ -9,29 +10,7 @@ const ReportsPage: React.FC = () => {
 
     return (
         <div className="reports-container">
-            <div className="app-bar">
-                <div className="shortcut" onClick={() => console.log('Send Configuration')}>
-                    {/* <span className="material-icons">send</span> */}
-                    <p>Configs</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Go to Meters')}>
-                    {/* <span className="material-icons">dashboard</span> */}
-                    <p>Meters</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Home')}>
-                    {/* <span className="material-icons">home</span> */}
-                    <p>Home</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Go to Reports')}>
-                    {/* <span className="material-icons">description</span> */}
-                    <p>Reports</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Settings')}>
-                    {/* <span className="material-icons">settings</span> */}
-                    <p>Settings</p>
-                </div>
-            </div>
-
+            <Appbar />
             <div className="reports-widgets">
                 <div className="widget">
                     <h3>Errors</h3>

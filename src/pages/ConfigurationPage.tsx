@@ -1,5 +1,6 @@
 // ConfigurationPage.tsx
 import React, { useState } from 'react';
+import Appbar from '../components/appbar';
 import '../css/ConfigurationPage.css';
 
 const ConfigurationPage: React.FC = () => {
@@ -22,6 +23,7 @@ const ConfigurationPage: React.FC = () => {
     const handleConfigTypeChange = (type: string) => {
         setConfigType(type);
         setShowSubmitButton(false);
+        console.log(showSubmitButton)
     };
 
     const handleUserIdChange = (id: string) => {
@@ -52,28 +54,7 @@ const ConfigurationPage: React.FC = () => {
 
     return (
         <div className="configuration-container">
-            <div className="app-bar">
-                <div className="shortcut" onClick={() => console.log('Send Configuration')}>
-                    {/* <span className="material-icons">send</span> */}
-                    <p>Configs</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Go to Meters')}>
-                    {/* <span className="material-icons">dashboard</span> */}
-                    <p>Meters</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Home')}>
-                    {/* <span className="material-icons">home</span> */}
-                    <p>Home</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Go to Reports')}>
-                    {/* <span className="material-icons">description</span> */}
-                    <p>Reports</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Settings')}>
-                    {/* <span className="material-icons">settings</span> */}
-                    <p>Settings</p>
-                </div>
-            </div>
+<Appbar />
 
             <div className="config-form">
                 <label>Select Meter:</label>

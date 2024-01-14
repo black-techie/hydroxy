@@ -1,6 +1,7 @@
 // MeterDetailsPage.tsx
 import React from 'react';
 import '../css/MeterDetailsPage.css';
+import Appbar from '../components/appbar';
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -59,28 +60,7 @@ const MeterDetailsPage: React.FC = () => {
 
     return (
         <div className="meter-details-container">
-            <div className="app-bar">
-            <div className="shortcut" onClick={() => console.log('Send Configuration')}>
-                    {/* <span className="material-icons">send</span> */}
-                    <p>Configs</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Go to Meters')}>
-                    {/* <span className="material-icons">dashboard</span> */}
-                    <p>Meters</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Home')}>
-                    {/* <span className="material-icons">home</span> */}
-                    <p>Home</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Go to Reports')}>
-                    {/* <span className="material-icons">description</span> */}
-                    <p>Reports</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Settings')}>
-                    {/* <span className="material-icons">settings</span> */}
-                    <p>Settings</p>
-                </div>
-            </div>
+<Appbar />
 
             <div className="meter-details">
                 <h2>Meter Details</h2>

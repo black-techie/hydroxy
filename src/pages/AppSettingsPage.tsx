@@ -1,5 +1,6 @@
 // AppSettingsPage.tsx
 import React, { useState } from 'react';
+import Appbar from '../components/appbar';
 import '../css/AppSettingsPage.css';
 
 const AppSettingsPage: React.FC = () => {
@@ -29,28 +30,7 @@ const AppSettingsPage: React.FC = () => {
 
     return (
         <div className="app-settings-container">
-            <div className="app-bar">
-            <div className="shortcut" onClick={() => console.log('Send Configuration')}>
-                    {/* <span className="material-icons">send</span> */}
-                    <p>Configs</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Go to Meters')}>
-                    {/* <span className="material-icons">dashboard</span> */}
-                    <p>Meters</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Home')}>
-                    {/* <span className="material-icons">home</span> */}
-                    <p>Home</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Go to Reports')}>
-                    {/* <span className="material-icons">description</span> */}
-                    <p>Reports</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Settings')}>
-                    {/* <span className="material-icons">settings</span> */}
-                    <p>Settings</p>
-                </div>
-            </div>
+            <Appbar />
 
             <div className="profile-section">
                 <h2>Edit Profile</h2>

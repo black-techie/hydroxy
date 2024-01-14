@@ -13,6 +13,7 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import { faker } from '@faker-js/faker';
+import Appbar from '../components/appbar';
 
 ChartJS.register(
     CategoryScale,
@@ -57,29 +58,7 @@ export const data = {
 const DashboardPage: React.FC = () => {
     return (
         <div className="dashboard-container">
-            <div className="app-bar">
-                <div className="shortcut" onClick={() => console.log('Send Configuration')}>
-                    {/* <span className="material-icons">send</span> */}
-                    <p>Configs</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Go to Meters')}>
-                    {/* <span className="material-icons">dashboard</span> */}
-                    <p>Meters</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Home')}>
-                    {/* <span className="material-icons">home</span> */}
-                    <p>Home</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Go to Reports')}>
-                    {/* <span className="material-icons">description</span> */}
-                    <p>Reports</p>
-                </div>
-                <div className="shortcut" onClick={() => console.log('Settings')}>
-                    {/* <span className="material-icons">settings</span> */}
-                    <p>Settings</p>
-                </div>
-            </div>
-
+            <Appbar />
             <div className="widget-section">
                 <div className="widget">
                     <p className="widget-title">No of Meters</p>
@@ -101,7 +80,7 @@ const DashboardPage: React.FC = () => {
 
             <div className="graph-section">
                 <div className="graph">
-                <Bar options={options} data={data} />
+                    <Bar options={options} data={data} />
                 </div>
             </div>
         </div>

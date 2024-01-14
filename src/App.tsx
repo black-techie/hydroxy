@@ -1,26 +1,32 @@
 import React from 'react';
-// import logo from './logo.svg';
-// import LoginPage from './pages/login';
-// import './App.css';
-// import ForgotPasswordPage from './pages/ForgotPasswordPage';
-// import DashboardPage from './pages/DashboardPage';
-// import MetersPage from './pages/MetersPage';
-// import MeterDetailsPage from './pages/MeterDetailsPage';
-// import ConfigurationPage from './pages/ConfigurationPage';
-// import AppSettingsPage from './pages/AppSettingsPage';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ForgotPasswordPage from './pages/ForgotPasswordPage';
+import ConfigurationPage from './pages/ConfigurationPage';
+import MeterDetailsPage from './pages/MeterDetailsPage';
+import AppSettingsPage from './pages/AppSettingsPage';
+import DashboardPage from './pages/DashboardPage';
 import ReportsPage from './pages/ReportsPage';
+import MetersPage from './pages/MetersPage';
+import LoginPage from './pages/login';
+import './css/App.css';
+
 
 function App() {
   return (
+
     <div className="App">
-      < ReportsPage />
-      {/* <AppSettingsPage /> */}
-      {/* <ConfigurationPage /> */}
-      {/* <MeterDetailsPage /> */}
-      {/* <MetersPage /> */}
-      {/* <DashboardPage /> */}
-      {/* <ForgotPasswordPage /> */}
-      {/* <LoginPage /> */}
+      <Router>
+        <Routes>
+          <Route path="/" element={<DashboardPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/configs" element={<ConfigurationPage />} />
+          <Route path="/reports" element={<ReportsPage />} />
+          <Route path="/setting" element={<AppSettingsPage />} />
+          <Route path="/meter" element={<MeterDetailsPage />} />
+          <Route path="/meters" element={<MetersPage />} />
+          <Route path="/forgot_password" element={<ForgotPasswordPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
