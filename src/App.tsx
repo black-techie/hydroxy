@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import LoginPage from './pages/login';
-import './App.css';
-import ForgotPasswordPage from './pages/ForgotPasswordPage';
-import DashboardPage from './pages/DashboardPage';
-import MetersPage from './pages/MetersPage';
-import MeterDetailsPage from './pages/MeterDetailsPage';
-import ConfigurationPage from './pages/ConfigurationPage';
-import AppSettingsPage from './pages/AppSettingsPage';
+// import logo from './logo.svg';
+// import LoginPage from './pages/login';
+// import './App.css';
+// import ForgotPasswordPage from './pages/ForgotPasswordPage';
+// import DashboardPage from './pages/DashboardPage';
+// import MetersPage from './pages/MetersPage';
+// import MeterDetailsPage from './pages/MeterDetailsPage';
+// import ConfigurationPage from './pages/ConfigurationPage';
+// import AppSettingsPage from './pages/AppSettingsPage';
 import ReportsPage from './pages/ReportsPage';
 
 function App() {
@@ -21,20 +21,6 @@ function App() {
       {/* <DashboardPage /> */}
       {/* <ForgotPasswordPage /> */}
       {/* <LoginPage /> */}
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
     </div>
   );
 }
