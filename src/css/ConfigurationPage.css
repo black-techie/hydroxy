@@ -1,0 +1,58 @@
+/* ConfigurationPage.css */
+
+.configuration-container {
+    padding: 20px;
+}
+
+.app-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ecf0f1;
+    color: #000000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.shortcut {
+    cursor: pointer;
+    text-align: center;
+}
+
+.shortcut p {
+    margin: 5px 0;
+}
+
+
+.material-icons {
+    font-size: 36px;
+}
+
+.config-form {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.config-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.config-form select,
+.config-form input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+
+.config-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,11 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
+import LoginPage from './pages/login';
 import './App.css';
+import ForgotPasswordPage from './pages/ForgotPasswordPage';
+import DashboardPage from './pages/DashboardPage';
+import MetersPage from './pages/MetersPage';
+import MeterDetailsPage from './pages/MeterDetailsPage';
+import ConfigurationPage from './pages/ConfigurationPage';
+import AppSettingsPage from './pages/AppSettingsPage';
+import ReportsPage from './pages/ReportsPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      < ReportsPage />
+      {/* <AppSettingsPage /> */}
+      {/* <ConfigurationPage /> */}
+      {/* <MeterDetailsPage /> */}
+      {/* <MetersPage /> */}
+      {/* <DashboardPage /> */}
+      {/* <ForgotPasswordPage /> */}
+      {/* <LoginPage /> */}
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -18,7 +34,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
